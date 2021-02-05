@@ -1,0 +1,20 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7b1affb300b543928f04458b912941ed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot supermario_tb_behav xil_defaultlib.supermario_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "F:/SuperMario/fpga/chip/src/Top_Digital.v" Line 3. Module Top_Digital has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "F:/SuperMario/fpga/chip/src/CentralController.v" Line 17. Module CentralController has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "F:/SuperMario/fpga/chip/chip.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CentralController
+Compiling module xil_defaultlib.ADC_Counter
+Compiling module xil_defaultlib.Top_Digital
+Compiling module xil_defaultlib.supermario
+Compiling module xil_defaultlib.spi
+Compiling module xil_defaultlib.supermario_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot supermario_tb_behav

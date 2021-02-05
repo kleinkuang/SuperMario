@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/SuperMario/fpga/chip/src/ADC_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADC_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/SuperMario/fpga/chip/src/CentralController.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CentralController
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/SuperMario/fpga/chip/src/Top_Digital.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_Digital

@@ -1,0 +1,13 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+F:/SuperMario/fpga/chip/src/ADC_Counter.v,1612482405,verilog,,F:/SuperMario/fpga/chip/src/CentralController.v,,ADC_Counter,,,,,,,,
+F:/SuperMario/fpga/chip/src/CentralController.v,1608050875,verilog,,F:/SuperMario/fpga/chip/src/Top_Digital.v,,CentralController,,,,,,,,
+F:/SuperMario/fpga/chip/src/Top_Digital.v,1608050875,verilog,,,,Top_Digital,,,,,,,,
+F:/SuperMario/fpga/chip/src/spi.sv,1610884268,systemVerilog,,F:/SuperMario/fpga/chip/src/supermario.sv,,spi,,,,,,,,
+F:/SuperMario/fpga/chip/src/supermario.sv,1610886395,systemVerilog,,F:/SuperMario/fpga/sp_rd/src/sp_rd_tb.sv,,supermario,,,,,,,,
+F:/SuperMario/fpga/sp_rd/sp_rd.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+F:/SuperMario/fpga/sp_rd/sp_rd.srcs/sources_1/ip/ila_sp_rd/sim/ila_sp_rd.v,1612516792,verilog,,F:/SuperMario/fpga/chip/src/ADC_Counter.v,,ila_sp_rd,,,,,,,,
+F:/SuperMario/fpga/sp_rd/src/sp_rd.sv,1612518323,systemVerilog,,F:/SuperMario/fpga/chip/src/spi.sv,,sp_rd,,,,,,,,
+F:/SuperMario/fpga/sp_rd/src/sp_rd_tb.sv,1612518409,systemVerilog,,,,sp_rd_tb,,,,,,,,

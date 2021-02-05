@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../src/ADC_Counter.v" \
+"../../../../src/CentralController.v" \
+"../../../../src/Top_Digital.v" \
+
+sv xil_defaultlib  \
+"../../../../src/spi.sv" \
+"../../../../src/supermario.sv" \
+"../../../../src/supermario_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
