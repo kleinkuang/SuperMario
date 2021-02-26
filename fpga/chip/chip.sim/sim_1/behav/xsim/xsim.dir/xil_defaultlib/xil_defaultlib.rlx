@@ -3,7 +3,7 @@
 May 24 2019
 15:06:07
 F:/SuperMario/fpga/chip/chip.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
-F:/SuperMario/fpga/chip/src/ADC_Counter.v,1612479214,verilog,,F:/SuperMario/fpga/chip/src/CentralController.v,,ADC_Counter,,,,,,,,
+F:/SuperMario/fpga/chip/src/ADC_Counter.v,1612482405,verilog,,F:/SuperMario/fpga/chip/src/CentralController.v,,ADC_Counter,,,,,,,,
 F:/SuperMario/fpga/chip/src/CentralController.v,1608050875,verilog,,F:/SuperMario/fpga/chip/src/Top_Digital.v,,CentralController,,,,,,,,
 F:/SuperMario/fpga/chip/src/Top_Digital.v,1608050875,verilog,,,,Top_Digital,,,,,,,,
 F:/SuperMario/fpga/chip/src/spi.sv,1610884268,systemVerilog,,F:/SuperMario/fpga/chip/src/supermario.sv,,spi,,,,,,,,

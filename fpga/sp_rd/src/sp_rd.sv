@@ -15,9 +15,6 @@ module sp_rd
     
     output logic [31:0] dout,
     output logic        dout_valid,
-    
-    // ILA
-    input  logic        ila_clk,
 
     // SuperMario Physical Port
     output logic        SP_CLK,
@@ -159,6 +156,23 @@ always_ff @ (posedge clk, negedge nrst)
         else
             if(dout_valid)
                 din_cnt <= '0;
+                
+// ----------------------------------------------------------------
+// Column and Row Indication
+// ----------------------------------------------------------------
+logic [13:0] p_cnt;
+logic [6:0]  p_col;
+logic [6:0]  p_row;
+
+always_ff @ (posedge clk, negedge nrst)
+    if(~nrst)
+        p_cnt <= '0;
+    else
+        if(din_valid)
+            p_cnt <= p_cnt + 14'd1;
+            
+assign p_col = p_cnt[13:7];
+assign p_row = p_cnt[6:0];
 
 // ----------------------------------------------------------------
 // Internal Logic Analyzer
@@ -166,20 +180,19 @@ always_ff @ (posedge clk, negedge nrst)
 
 ila_sp_rd i0
 (
-    .clk     (ila_clk),
+    .clk     (clk),
     
-    .probe0  (SP_CLK),
-    .probe1  (SP_NRST),
-    .probe2  (SP_SPI_CS),
-    .probe3  (SP_SPI_MOSI),
-    .probe4  (SP_SPI_MISO),
-    .probe5  (SP_UPDATE),
-    .probe6  (SP_EOF),
+    .probe0  (SP_NRST),
+    .probe1  (SP_SPI_CS),
+    .probe2  (SP_SPI_MOSI),
+    .probe3  (SP_SPI_MISO),
+    .probe4  (SP_UPDATE),
+    .probe5  (SP_EOF),
 
-    .probe7  (din[7:0]),
-    .probe8  (din_valid),
-    .probe9  (dout[31:0]),
-    .probe10 (dout_valid)
+    .probe6  (din[7:0]),
+    .probe7  (din_valid),
+    .probe8  (dout[31:0]),
+    .probe9  (dout_valid)
 );
 
 endmodule

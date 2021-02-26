@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Feb 16 16:25:26 2021
+# Process ID: 16628
+# Current directory: F:/SuperMario/fpga/spi_16b/spi_16b.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source F:/SuperMario/fpga/spi_16b/spi_16b.sim/sim_1/behav/xsim/xsim.dir/spi_24b_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: F:/SuperMario/fpga/spi_16b/spi_16b.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: F:/SuperMario/fpga/spi_16b/spi_16b.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source F:/SuperMario/fpga/spi_16b/spi_16b.sim/sim_1/behav/xsim/xsim.dir/spi_24b_tb_behav/webtalk/xsim_webtalk.tcl -notrace

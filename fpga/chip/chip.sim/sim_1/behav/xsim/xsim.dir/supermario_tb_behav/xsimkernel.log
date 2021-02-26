@@ -1,7 +1,7 @@
-Running: xsim.dir/supermario_tb_behav/xsimk.exe -simmode gui -wdb supermario_tb_behav.wdb -simrunnum 0 -socket 10751
+Running: xsim.dir/supermario_tb_behav/xsimk.exe -simmode gui -wdb supermario_tb_behav.wdb -simrunnum 0 -socket 4964
 Design successfully loaded
-Design Loading Memory Usage: 5492 KB (Peak: 5492 KB)
+Design Loading Memory Usage: 6044 KB (Peak: 6044 KB)
 Design Loading CPU Usage: 0 ms
 Simulation completed
-Simulation Memory Usage: 14776 KB (Peak: 14776 KB)
-Simulation CPU Usage: 3218 ms
+Simulation Memory Usage: 15392 KB (Peak: 15392 KB)
+Simulation CPU Usage: 9500 ms

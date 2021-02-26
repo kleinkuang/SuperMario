@@ -1,0 +1,7 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+F:/SuperMario/fpga/spi_24b/spi_24b.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+F:/SuperMario/fpga/spi_24b/src/spi_24b.sv,1613509110,systemVerilog,,F:/SuperMario/fpga/spi_24b/src/spi_24b_tb.sv,,spi_24b,,,,,,,,
+F:/SuperMario/fpga/spi_24b/src/spi_24b_tb.sv,1613476878,systemVerilog,,,,spi_24b_tb,,,,,,,,

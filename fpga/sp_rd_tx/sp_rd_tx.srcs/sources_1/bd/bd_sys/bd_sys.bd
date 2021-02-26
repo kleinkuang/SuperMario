@@ -1,0 +1,333 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x84D189C7A6631D33",
+      "device": "xcvu9p-flga2104-2L-e",
+      "name": "bd_sys",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_wiz_0": "",
+      "util_vector_logic_0": "",
+      "ft_tx_0": "",
+      "sp_rd_lvds_0": ""
+    },
+    "interface_ports": {
+      "FT601Q": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:user:FT601Q_rtl:1.0"
+      },
+      "CLK": {
+        "mode": "Slave",
+        "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "ports": {
+      "FULL": {
+        "direction": "O"
+      },
+      "rst": {
+        "direction": "I"
+      },
+      "debug": {
+        "direction": "I"
+      },
+      "START": {
+        "direction": "O"
+      },
+      "SP_UPDATE_P": {
+        "direction": "I"
+      },
+      "SP_UPDATE_N": {
+        "direction": "I"
+      },
+      "SP_EOF_P": {
+        "direction": "I"
+      },
+      "SP_EOF_N": {
+        "direction": "I"
+      },
+      "SP_DOUT_P": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "SP_DOUT_N": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "SP_SPI_MISO_P": {
+        "direction": "I"
+      },
+      "SP_SPI_MISO_N": {
+        "direction": "I"
+      },
+      "SP_NRST_P": {
+        "direction": "O"
+      },
+      "SP_NRST_N": {
+        "direction": "O"
+      },
+      "SP_SPI_CS_P": {
+        "direction": "O"
+      },
+      "SP_SPI_CS_N": {
+        "direction": "O"
+      },
+      "SP_SPI_MOSI_P": {
+        "direction": "O"
+      },
+      "SP_SPI_MOSI_N": {
+        "direction": "O"
+      },
+      "SP_DIN_P": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "SP_DIN_N": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "bd_sys_clk_wiz_0_0",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "33.330000000000005"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "121.731"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "77.836"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "40.000"
+          },
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "default_sysclk1_300"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "4.000"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "3.333"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "30.000"
+          },
+          "PRIM_SOURCE": {
+            "value": "Differential_clock_capable_pin"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "util_vector_logic_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "bd_sys_util_vector_logic_0_0",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "ft_tx_0": {
+        "vlnv": "xilinx.com:user:ft_tx:1.0",
+        "xci_name": "bd_sys_ft_tx_0_0"
+      },
+      "sp_rd_lvds_0": {
+        "vlnv": "xilinx.com:user:sp_rd_lvds:1.0",
+        "xci_name": "bd_sys_sp_rd_lvds_0_0"
+      }
+    },
+    "interface_nets": {
+      "sp_rd_lvds_0_DATA_OUT": {
+        "interface_ports": [
+          "sp_rd_lvds_0/DATA_OUT",
+          "ft_tx_0/DATA_IN"
+        ]
+      },
+      "CLK_IN1_D_0_1": {
+        "interface_ports": [
+          "CLK",
+          "clk_wiz_0/CLK_IN1_D"
+        ]
+      },
+      "ft_tx_0_FT601Q": {
+        "interface_ports": [
+          "FT601Q",
+          "ft_tx_0/FT601Q"
+        ]
+      }
+    },
+    "nets": {
+      "ft_tx_0_ft_full": {
+        "ports": [
+          "ft_tx_0/ft_full",
+          "FULL"
+        ]
+      },
+      "rst_1": {
+        "ports": [
+          "rst",
+          "util_vector_logic_0/Op1"
+        ]
+      },
+      "ft_tx_0_ft_start": {
+        "ports": [
+          "ft_tx_0/ft_start",
+          "sp_rd_lvds_0/start"
+        ]
+      },
+      "debug_0_1": {
+        "ports": [
+          "debug",
+          "sp_rd_lvds_0/debug"
+        ]
+      },
+      "ft_tx_0_ft_ready": {
+        "ports": [
+          "ft_tx_0/ft_ready",
+          "START"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "sp_rd_lvds_0/clk"
+        ]
+      },
+      "util_vector_logic_0_Res": {
+        "ports": [
+          "util_vector_logic_0/Res",
+          "ft_tx_0/nrst",
+          "sp_rd_lvds_0/nrst"
+        ]
+      },
+      "SP_UPDATE_P_0_1": {
+        "ports": [
+          "SP_UPDATE_P",
+          "sp_rd_lvds_0/SP_UPDATE_P"
+        ]
+      },
+      "SP_UPDATE_N_0_1": {
+        "ports": [
+          "SP_UPDATE_N",
+          "sp_rd_lvds_0/SP_UPDATE_N"
+        ]
+      },
+      "SP_EOF_P_0_1": {
+        "ports": [
+          "SP_EOF_P",
+          "sp_rd_lvds_0/SP_EOF_P"
+        ]
+      },
+      "SP_EOF_N_0_1": {
+        "ports": [
+          "SP_EOF_N",
+          "sp_rd_lvds_0/SP_EOF_N"
+        ]
+      },
+      "SP_DOUT_P_0_1": {
+        "ports": [
+          "SP_DOUT_P",
+          "sp_rd_lvds_0/SP_DOUT_P"
+        ]
+      },
+      "SP_DOUT_N_0_1": {
+        "ports": [
+          "SP_DOUT_N",
+          "sp_rd_lvds_0/SP_DOUT_N"
+        ]
+      },
+      "SP_SPI_MISO_P_0_1": {
+        "ports": [
+          "SP_SPI_MISO_P",
+          "sp_rd_lvds_0/SP_SPI_MISO_P"
+        ]
+      },
+      "SP_SPI_MISO_N_0_1": {
+        "ports": [
+          "SP_SPI_MISO_N",
+          "sp_rd_lvds_0/SP_SPI_MISO_N"
+        ]
+      },
+      "sp_rd_lvds_0_SP_NRST_P": {
+        "ports": [
+          "sp_rd_lvds_0/SP_NRST_P",
+          "SP_NRST_P"
+        ]
+      },
+      "sp_rd_lvds_0_SP_NRST_N": {
+        "ports": [
+          "sp_rd_lvds_0/SP_NRST_N",
+          "SP_NRST_N"
+        ]
+      },
+      "sp_rd_lvds_0_SP_SPI_CS_P": {
+        "ports": [
+          "sp_rd_lvds_0/SP_SPI_CS_P",
+          "SP_SPI_CS_P"
+        ]
+      },
+      "sp_rd_lvds_0_SP_SPI_CS_N": {
+        "ports": [
+          "sp_rd_lvds_0/SP_SPI_CS_N",
+          "SP_SPI_CS_N"
+        ]
+      },
+      "sp_rd_lvds_0_SP_SPI_MOSI_P": {
+        "ports": [
+          "sp_rd_lvds_0/SP_SPI_MOSI_P",
+          "SP_SPI_MOSI_P"
+        ]
+      },
+      "sp_rd_lvds_0_SP_SPI_MOSI_N": {
+        "ports": [
+          "sp_rd_lvds_0/SP_SPI_MOSI_N",
+          "SP_SPI_MOSI_N"
+        ]
+      },
+      "sp_rd_lvds_0_SP_DIN_P": {
+        "ports": [
+          "sp_rd_lvds_0/SP_DIN_P",
+          "SP_DIN_P"
+        ]
+      },
+      "sp_rd_lvds_0_SP_DIN_N": {
+        "ports": [
+          "sp_rd_lvds_0/SP_DIN_N",
+          "SP_DIN_N"
+        ]
+      }
+    }
+  }
+}

@@ -13,11 +13,9 @@ module sp_rd_lvds
     input  logic        debug,
     input  logic        start,
     
+    output logic        dout_clk,
     output logic [31:0] dout,
     output logic        dout_valid,
-    
-    // ILA
-    input  logic        ila_clk,
     
     // SuperMario Physical Port
     output logic        SP_CLK_P,
@@ -40,6 +38,8 @@ module sp_rd_lvds
     output logic        SP_SPI_MOSI_P,
     output logic        SP_SPI_MOSI_N
 );
+
+assign dout_clk = clk;
 
 // ----------------------------------------------------------------
 // Instantiation
@@ -64,9 +64,6 @@ sp_rd sp_rd_inst
     
     .dout        (dout),
     .dout_valid  (dout_valid),
-    
-    // ILA
-    .ila_clk     (ila_clk),
 
     // SuperMario Physical Port
     .SP_CLK      (SP_CLK),
