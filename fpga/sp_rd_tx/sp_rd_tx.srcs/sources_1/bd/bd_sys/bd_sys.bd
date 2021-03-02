@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x84D189C7A6631D33",
+      "boundary_crc": "0x3099543BEC17D626",
       "device": "xcvu9p-flga2104-2L-e",
       "name": "bd_sys",
       "synth_flow_mode": "Hierarchical",
@@ -32,6 +32,10 @@
             "value_src": "default"
           }
         }
+      },
+      "SP": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:user:SuperMario_rtl:1.0"
       }
     },
     "ports": {
@@ -46,62 +50,6 @@
       },
       "START": {
         "direction": "O"
-      },
-      "SP_UPDATE_P": {
-        "direction": "I"
-      },
-      "SP_UPDATE_N": {
-        "direction": "I"
-      },
-      "SP_EOF_P": {
-        "direction": "I"
-      },
-      "SP_EOF_N": {
-        "direction": "I"
-      },
-      "SP_DOUT_P": {
-        "direction": "I",
-        "left": "7",
-        "right": "0"
-      },
-      "SP_DOUT_N": {
-        "direction": "I",
-        "left": "7",
-        "right": "0"
-      },
-      "SP_SPI_MISO_P": {
-        "direction": "I"
-      },
-      "SP_SPI_MISO_N": {
-        "direction": "I"
-      },
-      "SP_NRST_P": {
-        "direction": "O"
-      },
-      "SP_NRST_N": {
-        "direction": "O"
-      },
-      "SP_SPI_CS_P": {
-        "direction": "O"
-      },
-      "SP_SPI_CS_N": {
-        "direction": "O"
-      },
-      "SP_SPI_MOSI_P": {
-        "direction": "O"
-      },
-      "SP_SPI_MOSI_N": {
-        "direction": "O"
-      },
-      "SP_DIN_P": {
-        "direction": "O",
-        "left": "7",
-        "right": "0"
-      },
-      "SP_DIN_N": {
-        "direction": "O",
-        "left": "7",
-        "right": "0"
       }
     },
     "components": {
@@ -169,6 +117,12 @@
       }
     },
     "interface_nets": {
+      "sp_rd_lvds_0_SP": {
+        "interface_ports": [
+          "SP",
+          "sp_rd_lvds_0/SP"
+        ]
+      },
       "sp_rd_lvds_0_DATA_OUT": {
         "interface_ports": [
           "sp_rd_lvds_0/DATA_OUT",
@@ -230,102 +184,6 @@
           "util_vector_logic_0/Res",
           "ft_tx_0/nrst",
           "sp_rd_lvds_0/nrst"
-        ]
-      },
-      "SP_UPDATE_P_0_1": {
-        "ports": [
-          "SP_UPDATE_P",
-          "sp_rd_lvds_0/SP_UPDATE_P"
-        ]
-      },
-      "SP_UPDATE_N_0_1": {
-        "ports": [
-          "SP_UPDATE_N",
-          "sp_rd_lvds_0/SP_UPDATE_N"
-        ]
-      },
-      "SP_EOF_P_0_1": {
-        "ports": [
-          "SP_EOF_P",
-          "sp_rd_lvds_0/SP_EOF_P"
-        ]
-      },
-      "SP_EOF_N_0_1": {
-        "ports": [
-          "SP_EOF_N",
-          "sp_rd_lvds_0/SP_EOF_N"
-        ]
-      },
-      "SP_DOUT_P_0_1": {
-        "ports": [
-          "SP_DOUT_P",
-          "sp_rd_lvds_0/SP_DOUT_P"
-        ]
-      },
-      "SP_DOUT_N_0_1": {
-        "ports": [
-          "SP_DOUT_N",
-          "sp_rd_lvds_0/SP_DOUT_N"
-        ]
-      },
-      "SP_SPI_MISO_P_0_1": {
-        "ports": [
-          "SP_SPI_MISO_P",
-          "sp_rd_lvds_0/SP_SPI_MISO_P"
-        ]
-      },
-      "SP_SPI_MISO_N_0_1": {
-        "ports": [
-          "SP_SPI_MISO_N",
-          "sp_rd_lvds_0/SP_SPI_MISO_N"
-        ]
-      },
-      "sp_rd_lvds_0_SP_NRST_P": {
-        "ports": [
-          "sp_rd_lvds_0/SP_NRST_P",
-          "SP_NRST_P"
-        ]
-      },
-      "sp_rd_lvds_0_SP_NRST_N": {
-        "ports": [
-          "sp_rd_lvds_0/SP_NRST_N",
-          "SP_NRST_N"
-        ]
-      },
-      "sp_rd_lvds_0_SP_SPI_CS_P": {
-        "ports": [
-          "sp_rd_lvds_0/SP_SPI_CS_P",
-          "SP_SPI_CS_P"
-        ]
-      },
-      "sp_rd_lvds_0_SP_SPI_CS_N": {
-        "ports": [
-          "sp_rd_lvds_0/SP_SPI_CS_N",
-          "SP_SPI_CS_N"
-        ]
-      },
-      "sp_rd_lvds_0_SP_SPI_MOSI_P": {
-        "ports": [
-          "sp_rd_lvds_0/SP_SPI_MOSI_P",
-          "SP_SPI_MOSI_P"
-        ]
-      },
-      "sp_rd_lvds_0_SP_SPI_MOSI_N": {
-        "ports": [
-          "sp_rd_lvds_0/SP_SPI_MOSI_N",
-          "SP_SPI_MOSI_N"
-        ]
-      },
-      "sp_rd_lvds_0_SP_DIN_P": {
-        "ports": [
-          "sp_rd_lvds_0/SP_DIN_P",
-          "SP_DIN_P"
-        ]
-      },
-      "sp_rd_lvds_0_SP_DIN_N": {
-        "ports": [
-          "sp_rd_lvds_0/SP_DIN_N",
-          "SP_DIN_N"
         ]
       }
     }

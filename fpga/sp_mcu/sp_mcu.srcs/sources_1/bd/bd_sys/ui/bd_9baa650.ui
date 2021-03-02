@@ -1,0 +1,80 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port sysclk_125 -pg 1 -lvl 0 -x 0 -y 910 -defaultsOSRD
+preplace port rs232_uart -pg 1 -lvl 6 -x 1810 -y 560 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x 0 -y 930 -defaultsOSRD
+preplace port VREF_CS -pg 1 -lvl 6 -x 1810 -y 690 -defaultsOSRD
+preplace port VREF_MOSI -pg 1 -lvl 6 -x 1810 -y 710 -defaultsOSRD
+preplace port VREF_SCK -pg 1 -lvl 6 -x 1810 -y 730 -defaultsOSRD
+preplace port VPN_SCK -pg 1 -lvl 6 -x 1810 -y 420 -defaultsOSRD
+preplace port VPN_CS -pg 1 -lvl 6 -x 1810 -y 440 -defaultsOSRD
+preplace port VPN_MOSI -pg 1 -lvl 6 -x 1810 -y 460 -defaultsOSRD
+preplace port VBI_CS -pg 1 -lvl 6 -x 1810 -y 310 -defaultsOSRD
+preplace port VBI_MOSI -pg 1 -lvl 6 -x 1810 -y 330 -defaultsOSRD
+preplace port VBI_SCK -pg 1 -lvl 6 -x 1810 -y 290 -defaultsOSRD
+preplace portBus AVDD1_EN -pg 1 -lvl 6 -x 1810 -y 160 -defaultsOSRD
+preplace portBus AVDD1_ESD_EN -pg 1 -lvl 6 -x 1810 -y 120 -defaultsOSRD
+preplace portBus DVDD1_EN -pg 1 -lvl 6 -x 1810 -y 200 -defaultsOSRD
+preplace portBus VDD2_EN -pg 1 -lvl 6 -x 1810 -y 100 -defaultsOSRD
+preplace portBus VREF_CLR -pg 1 -lvl 6 -x 1810 -y 60 -defaultsOSRD
+preplace portBus VREF_EN -pg 1 -lvl 6 -x 1810 -y 260 -defaultsOSRD
+preplace portBus LED_VDD2_EN -pg 1 -lvl 6 -x 1810 -y 80 -defaultsOSRD
+preplace portBus LED_AVDD1_ESD_EN -pg 1 -lvl 6 -x 1810 -y 140 -defaultsOSRD
+preplace portBus LED_AVDD1_EN -pg 1 -lvl 6 -x 1810 -y 180 -defaultsOSRD
+preplace portBus LED_DVDD1_EN -pg 1 -lvl 6 -x 1810 -y 220 -defaultsOSRD
+preplace portBus LED_VREF_EN -pg 1 -lvl 6 -x 1810 -y 240 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 3 -x 850 -y 690 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 4 -x 1260 -y 700 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 2 -x 420 -y 690 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -x 130 -y 920 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 2 -x 420 -y 870 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 5 -x 1600 -y 570 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 4 -x 1260 -y 400 -defaultsOSRD
+preplace inst SP_GPIO -pg 1 -lvl 5 -x 1600 -y 130 -defaultsOSRD
+preplace inst DAC7562 -pg 1 -lvl 5 -x 1600 -y 710 -defaultsOSRD
+preplace inst MCP4822_0 -pg 1 -lvl 5 -x 1600 -y 440 -defaultsOSRD
+preplace inst MCP4822_1 -pg 1 -lvl 5 -x 1600 -y 310 -defaultsOSRD
+preplace netloc microblaze_0_Clk 1 1 4 240 770 600 600 1110 600 1440
+preplace netloc clk_wiz_1_locked 1 1 1 250 910n
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 1 610 720n
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 2 N 850 1110J
+preplace netloc mdm_1_debug_sys_rst 1 1 2 250 760 590
+preplace netloc reset_1 1 0 2 20 850 NJ
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 2 3 600J 840 1100 610 1450
+preplace netloc SP_GPIO_AVDD1_EN 1 5 1 1770 120n
+preplace netloc SP_GPIO_AVDD1_ESD_EN 1 5 1 1780 100n
+preplace netloc SP_GPIO_DVDD1_EN 1 5 1 1760 140n
+preplace netloc SP_GPIO_VDD2_EN 1 5 1 1790 80n
+preplace netloc SP_GPIO_VREF_CLR 1 5 1 NJ 60
+preplace netloc SP_GPIO_VREF_EN 1 5 1 1750 160n
+preplace netloc DAC7562_DAC7562_CS 1 5 1 NJ 690
+preplace netloc DAC7562_DAC7562_MOSI 1 5 1 NJ 710
+preplace netloc DAC7562_DAC7562_SCK 1 5 1 NJ 730
+preplace netloc MCP4822_0_SPI_SCK_0 1 5 1 NJ 420
+preplace netloc MCP4822_0_SPI_CS_0 1 5 1 NJ 440
+preplace netloc MCP4822_0_SPI_MOSI_0 1 5 1 NJ 460
+preplace netloc MCP4822_1_VBI_CS 1 5 1 NJ 310
+preplace netloc MCP4822_1_VBI_MOSI 1 5 1 NJ 330
+preplace netloc MCP4822_1_VBI_SCK 1 5 1 NJ 290
+preplace netloc microblaze_0_axi_periph_M00_AXI 1 4 1 1430 360n
+preplace netloc axi_uartlite_0_UART 1 5 1 NJ 560
+preplace netloc microblaze_0_M_AXI_DP 1 3 1 1090 260n
+preplace netloc microblaze_0_dlmb_1 1 3 1 N 670
+preplace netloc microblaze_0_ilmb_1 1 3 1 N 690
+preplace netloc microblaze_0_debug 1 2 1 N 680
+preplace netloc sysclk_125_1 1 0 1 NJ 910
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 4 1 1410 110n
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 4 1 1410 400n
+preplace netloc microblaze_0_axi_periph_M04_AXI 1 4 1 1420 290n
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 4 1 N 420
+levelinfo -pg 1 0 130 420 850 1260 1600 1810
+pagesize -pg 1 -db -bbox -sgen -120 0 2040 990
+"
+}
+{
+   "da_axi4_cnt":"5",
+   "da_board_cnt":"5",
+   "da_mb_cnt":"1"
+}

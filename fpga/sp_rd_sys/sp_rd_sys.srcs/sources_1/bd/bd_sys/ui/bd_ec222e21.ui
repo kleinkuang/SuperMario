@@ -1,0 +1,43 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port S_AXI -pg 1 -lvl 0 -x 0 -y 650 -defaultsOSRD
+preplace port s_axi_aclk -pg 1 -lvl 0 -x 0 -y 670 -defaultsOSRD
+preplace port s_axi_aresetn -pg 1 -lvl 0 -x 0 -y 690 -defaultsOSRD
+preplace portBus VREF_CLR -pg 1 -lvl 3 -x 520 -y 60 -defaultsOSRD
+preplace portBus VDD2_EN -pg 1 -lvl 3 -x 520 -y 40 -defaultsOSRD
+preplace portBus AVDD1_ESD_EN -pg 1 -lvl 3 -x 520 -y 160 -defaultsOSRD
+preplace portBus AVDD1_EN -pg 1 -lvl 3 -x 520 -y 260 -defaultsOSRD
+preplace portBus DVDD1_EN -pg 1 -lvl 3 -x 520 -y 20 -defaultsOSRD
+preplace portBus VREF_EN -pg 1 -lvl 3 -x 520 -y 360 -defaultsOSRD
+preplace portBus RD_EN -pg 1 -lvl 3 -x 520 -y 460 -defaultsOSRD
+preplace portBus fpga_debug -pg 1 -lvl 3 -x 520 -y 860 -defaultsOSRD
+preplace portBus chip_debug -pg 1 -lvl 3 -x 520 -y 760 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 1 -x 160 -y 670 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -x 400 -y 60 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 2 -x 400 -y 560 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 2 -x 400 -y 160 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 2 -x 400 -y 260 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 2 -x 400 -y 660 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 2 -x 400 -y 360 -defaultsOSRD
+preplace inst xlslice_5 -pg 1 -lvl 2 -x 400 -y 460 -defaultsOSRD
+preplace inst xlslice_6 -pg 1 -lvl 2 -x 400 -y 860 -defaultsOSRD
+preplace inst xlslice_7 -pg 1 -lvl 2 -x 400 -y 760 -defaultsOSRD
+preplace netloc s_axi_aclk_0_1 1 0 1 NJ 670
+preplace netloc s_axi_aresetn_0_1 1 0 1 NJ 690
+preplace netloc axi_gpio_0_gpio_io_o 1 1 1 300 160n
+preplace netloc xlslice_1_Dout 1 2 1 NJ 160
+preplace netloc xlslice_2_Dout 1 2 1 NJ 260
+preplace netloc xlslice_4_Dout 1 2 1 NJ 360
+preplace netloc xlslice_5_Dout 1 2 1 NJ 460
+preplace netloc xlconstant_0_dout 1 2 1 500J 20n
+preplace netloc axi_gpio_0_gpio2_io_o 1 1 1 300 700n
+preplace netloc xlslice_6_Dout 1 2 1 NJ 860
+preplace netloc xlslice_7_Dout 1 2 1 NJ 760
+preplace netloc Conn1 1 0 1 NJ 650
+levelinfo -pg 1 0 160 400 520
+pagesize -pg 1 -db -bbox -sgen -140 0 710 920
+"
+}
+0

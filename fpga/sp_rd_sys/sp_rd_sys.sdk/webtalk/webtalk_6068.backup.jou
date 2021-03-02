@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Mon Mar  1 16:14:09 2021
+# Process ID: 6068
+# Current directory: F:/SuperMario/fpga/sp_rd_sys/sp_rd_sys.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: F:/SuperMario/fpga/sp_rd_sys/sp_rd_sys.sdk/webtalk/webtalk.log
+# Journal file: F:/SuperMario/fpga/sp_rd_sys/sp_rd_sys.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

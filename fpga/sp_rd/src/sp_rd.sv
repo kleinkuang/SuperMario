@@ -10,7 +10,8 @@ module sp_rd
     input  logic        clk,
     input  logic        nrst,
     
-    input  logic        debug,
+    input  logic        chip_debug,
+    input  logic        fpga_debug,
     input  logic        start,
     
     output logic [31:0] dout,
@@ -90,7 +91,7 @@ always_ff @ (posedge clk, negedge nrst) begin
                             state <= s_cycle;
             s_cycle:    if(spi_done)                // SuperMario Cycle Cmd
                             state <= s_update;
-            s_update:   if(~SP_UPDATE)              // Wait until the update glag deasserts (bug)
+            s_update:   if(~SP_UPDATE)              // Wait until the update flag deasserts (bug)
                             state <= s_readout;
             s_readout:  state <=  s_readout;
         endcase
@@ -102,11 +103,11 @@ always_comb begin
     case(state)
         s_rst:      begin
                     spi_req = spi_rdy;
-                    spi_data_out = 8'b111_0_0000;
+                    spi_data_out = {3'b111, chip_debug, 4'b0000};
                     end
         s_cycle:    begin
                     spi_req = spi_rdy;
-                    spi_data_out = 8'b000_0_0000;
+                    spi_data_out = {3'b000, chip_debug, 4'b0000};
                     end
     endcase
 end
@@ -117,6 +118,47 @@ assign SP_NRST = state!=s_idle;
 assign SP_DIN = '0;
 
 // ----------------------------------------------------------------
+// Update Sync for Chip Bug Fix
+// ----------------------------------------------------------------
+logic [7:0] update_sync_cnt;
+logic       update_sync_lock;
+logic [8:0] update_cnt;
+logic       update_fake;
+
+// Sync Update
+always_ff @ (posedge clk, negedge nrst)
+    if(~nrst) begin
+        update_sync_cnt  <= '0;
+        update_sync_lock <= '0;
+    end
+    else
+        if(state==s_cycle & spi_done)
+            update_sync_cnt <= 8'd1;
+        else
+            if(update_sync_cnt!='0 & ~update_sync_lock) begin
+                update_sync_cnt <= update_sync_cnt + 8'd1;
+                if(update_sync_cnt==8'd130)
+                    update_sync_lock <= '1;
+            end
+
+always_ff @ (posedge clk, negedge nrst)
+    if(~nrst)
+        update_cnt <= '0;
+    else
+        if(update_sync_lock)
+            update_cnt <= update_cnt==9'd310 ? '0 : update_cnt + 9'd1;
+            
+always_ff @ (posedge clk, negedge nrst)
+    if(~nrst)
+        update_fake <= '0;
+    else
+        if(update_cnt==9'd182)
+            update_fake <= '1;
+        else
+            if(update_cnt==9'd310)
+                update_fake <= '0;
+
+// ----------------------------------------------------------------
 // SuperMario Readout
 // ----------------------------------------------------------------
 logic [7:0] din;
@@ -124,7 +166,7 @@ logic [7:0] din_debug;
 logic       din_valid;
 
 assign din = SP_DOUT;
-assign din_valid = SP_UPDATE & state==s_readout;
+assign din_valid = chip_debug ? update_fake : SP_UPDATE & state==s_readout;
 
 // Debug
 always_ff @ (posedge clk, negedge nrst)
@@ -140,7 +182,7 @@ always_ff @ (posedge clk, negedge nrst)
         dout <= '0;
     else
         if(din_valid)
-            dout <= {debug ? din_debug : din, dout[31:8]};
+            dout <= {fpga_debug ? din_debug : din, dout[31:8]};
             
 // Flag
 logic [2:0] din_cnt; // 0...4

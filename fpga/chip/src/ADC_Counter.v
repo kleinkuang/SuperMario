@@ -22,7 +22,7 @@ module ADC_Counter(
 	
 	output reg reset,		    // flag to reset comparator
 	output reg [7:0] ADC_OUT,
-    output wire update           // Up when the ADC_OUT is valid
+    output reg update           // Up when the ADC_OUT is valid
 	);
 
 
@@ -130,7 +130,7 @@ generate
 endgenerate
 
 // output MUX
-reg update_int;
+/*reg update_int;
 
 always @ (posedge clk, negedge n_reset)
 begin
@@ -144,15 +144,14 @@ begin
         // the ADC out is cycled between 0 and 127 clock cycles.
         if (main_counter <= 127)
         begin
-            //if (debug_mux)
-                //ADC_OUT <= main_counter;
-            //else
-            //begin
-                //ADC_OUT <= ADC_OUT_buffer[8*main_counter +: 8];
-                update_int <= 1'b1;
-                //if(update)
-                //    ADC_OUT <= ADC_OUT + 1;
-            //end
+            if (debug_mux)
+                ADC_OUT <= main_counter;
+            else
+            begin
+                ADC_OUT <= ADC_OUT_buffer[8*main_counter +: 8];
+                if(update)
+                    ADC_OUT <= ADC_OUT + 1;
+            end
         end     
         else
         begin
@@ -181,6 +180,35 @@ begin
     else
         if(update_int & start)
             ADC_OUT <= ADC_OUT + 1;
+end*/
+
+// output MUX
+always @ (posedge clk, negedge n_reset)
+begin
+    if (~n_reset)
+    begin
+        ADC_OUT <= 8'd0;
+        update <= 1'b0;
+    end    
+    else
+    begin
+        // the ADC out is cycled between 0 and 127 clock cycles.
+        if (main_counter <= 127)
+        begin
+            if (debug_mux)
+                ADC_OUT <= main_counter;
+            else
+            begin
+                ADC_OUT <= ADC_OUT_buffer[8*main_counter +: 8];
+                update <= 1'b1;
+            end
+        end     
+        else
+        begin
+            ADC_OUT <= 8'd0;
+            update <= 1'b0;
+        end    
+    end
 end
 
 endmodule

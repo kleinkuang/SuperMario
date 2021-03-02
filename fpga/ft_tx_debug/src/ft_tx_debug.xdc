@@ -112,8 +112,3 @@ set_property PULLUP TRUE                        [get_ports FT601Q_ft_siwu_n]
 set_property BITSTREAM.CONFIG.SPI_BUSWIDTH 8 [current_design]
 set_property BITSTREAM.CONFIG.CONFIGRATE 85.0 [current_design]
 set_property BITSTREAM.CONFIG.SPI_FALL_EDGE YES [current_desig]\
-
-# ----------------------------------------------------------------
-# False Path
-# ----------------------------------------------------------------
-set_false_path -from [get_clocks -of_objects [get_pins bd_sys_inst/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0]] -to [get_clocks FT601Q_ft_clk]

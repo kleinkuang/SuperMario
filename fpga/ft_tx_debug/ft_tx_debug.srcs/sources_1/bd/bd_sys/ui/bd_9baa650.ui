@@ -2,28 +2,25 @@
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port FT601Q -pg 1 -lvl 3 -x 540 -y 120 -defaultsOSRD
-preplace port CLK_IN1 -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
-preplace port nrst -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
-preplace port wr_en -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
-preplace port wr_full -pg 1 -lvl 3 -x 540 -y 40 -defaultsOSRD
-preplace port ft_start -pg 1 -lvl 3 -x 540 -y 160 -defaultsOSRD
-preplace port ft_ready -pg 1 -lvl 3 -x 540 -y 140 -defaultsOSRD
-preplace port wr_clk -pg 1 -lvl 3 -x 540 -y 20 -defaultsOSRD
-preplace portBus wr_data -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 130 -y 120 -defaultsOSRD
-preplace inst ft_tx_0 -pg 1 -lvl 2 -x 390 -y 150 -defaultsOSRD
-preplace netloc nrst_0_1 1 0 2 NJ 200 NJ
-preplace netloc wr_data_0_1 1 0 2 NJ 60 250J
-preplace netloc wr_en_0_1 1 0 2 NJ 180 NJ
-preplace netloc ft_tx_0_wr_full 1 1 2 260 40 NJ
-preplace netloc ft_tx_0_ft_start 1 2 1 NJ 160
-preplace netloc ft_tx_0_ft_ready 1 2 1 NJ 140
-preplace netloc clk_wiz_0_clk_out1 1 1 2 240 20 NJ
-preplace netloc CLK_IN1_D_0_1 1 0 1 NJ 120
-preplace netloc ft_tx_0_FT601Q 1 2 1 NJ 120
-levelinfo -pg 1 0 130 390 540
-pagesize -pg 1 -db -bbox -sgen -140 0 650 260
+preplace port FT601Q -pg 1 -lvl 2 -x 300 -y 110 -defaultsOSRD
+preplace port ft_ready -pg 1 -lvl 2 -x 300 -y 130 -defaultsOSRD
+preplace port ft_start -pg 1 -lvl 2 -x 300 -y 150 -defaultsOSRD
+preplace port wr_full -pg 1 -lvl 2 -x 300 -y 20 -defaultsOSRD
+preplace port wr_clk -pg 1 -lvl 2 -x 300 -y 240 -defaultsOSRD
+preplace port wr_en -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port nrst -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace portBus wr_data -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace inst ft_tx_0 -pg 1 -lvl 1 -x 150 -y 130 -defaultsOSRD
+preplace netloc wr_data_0_1 1 0 1 NJ 100
+preplace netloc ft_tx_0_wr_full 1 0 2 20 20 NJ
+preplace netloc ft_tx_0_wr_clk 1 0 2 20 240 NJ
+preplace netloc wr_en_0_1 1 0 1 NJ 160
+preplace netloc nrst_0_1 1 0 1 NJ 180
+preplace netloc ft_tx_0_ft_ready 1 1 1 NJ 130
+preplace netloc ft_tx_0_ft_start 1 1 1 NJ 150
+preplace netloc ft_tx_0_FT601Q 1 1 1 NJ 110
+levelinfo -pg 1 0 150 300
+pagesize -pg 1 -db -bbox -sgen -140 0 410 260
 "
 }
 0

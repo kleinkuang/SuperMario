@@ -156,8 +156,6 @@ proc create_root_design { parentCell } {
 
 
   # Create interface ports
-  set CLK_IN1 [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_clock_rtl:1.0 CLK_IN1 ]
-
   set FT601Q [ create_bd_intf_port -mode Master -vlnv xilinx.com:user:FT601Q_rtl:1.0 FT601Q ]
 
 
@@ -170,34 +168,16 @@ proc create_root_design { parentCell } {
   set wr_en [ create_bd_port -dir I wr_en ]
   set wr_full [ create_bd_port -dir O wr_full ]
 
-  # Create instance: clk_wiz_0, and set properties
-  set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
-  set_property -dict [ list \
-   CONFIG.CLKIN1_JITTER_PS {33.330000000000005} \
-   CONFIG.CLKOUT1_JITTER {121.731} \
-   CONFIG.CLKOUT1_PHASE_ERROR {77.836} \
-   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {40} \
-   CONFIG.CLK_IN1_BOARD_INTERFACE {default_sysclk1_300} \
-   CONFIG.MMCM_CLKFBOUT_MULT_F {4.000} \
-   CONFIG.MMCM_CLKIN1_PERIOD {3.333} \
-   CONFIG.MMCM_CLKIN2_PERIOD {10.0} \
-   CONFIG.MMCM_CLKOUT0_DIVIDE_F {30.000} \
-   CONFIG.PRIM_SOURCE {Differential_clock_capable_pin} \
-   CONFIG.USE_LOCKED {false} \
-   CONFIG.USE_RESET {false} \
- ] $clk_wiz_0
-
   # Create instance: ft_tx_0, and set properties
   set ft_tx_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:ft_tx:1.0 ft_tx_0 ]
 
   # Create interface connections
-  connect_bd_intf_net -intf_net CLK_IN1_D_0_1 [get_bd_intf_ports CLK_IN1] [get_bd_intf_pins clk_wiz_0/CLK_IN1_D]
   connect_bd_intf_net -intf_net ft_tx_0_FT601Q [get_bd_intf_ports FT601Q] [get_bd_intf_pins ft_tx_0/FT601Q]
 
   # Create port connections
-  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_ports wr_clk] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins ft_tx_0/wr_clk]
   connect_bd_net -net ft_tx_0_ft_ready [get_bd_ports ft_ready] [get_bd_pins ft_tx_0/ft_ready]
   connect_bd_net -net ft_tx_0_ft_start [get_bd_ports ft_start] [get_bd_pins ft_tx_0/ft_start]
+  connect_bd_net -net ft_tx_0_wr_clk [get_bd_ports wr_clk] [get_bd_pins ft_tx_0/wr_clk]
   connect_bd_net -net ft_tx_0_wr_full [get_bd_ports wr_full] [get_bd_pins ft_tx_0/wr_full]
   connect_bd_net -net nrst_0_1 [get_bd_ports nrst] [get_bd_pins ft_tx_0/nrst]
   connect_bd_net -net wr_data_0_1 [get_bd_ports wr_data] [get_bd_pins ft_tx_0/wr_data]

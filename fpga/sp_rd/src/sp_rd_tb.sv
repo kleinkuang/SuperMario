@@ -7,11 +7,11 @@ module sp_rd_tb;
 
 logic        clk;
 logic        nrst;
-logic        debug;
+logic        chip_debug;
+logic        fpga_debug;
 logic        start;
 logic [31:0] dout;
 logic        dout_valid;
-logic        ila_clk;
 // SuperMario Physical Pins
 logic        SP_CLK;
 logic        SP_NRST;
@@ -24,8 +24,9 @@ logic        SP_SPI_CS;
 logic        SP_SPI_MISO;
 logic        SP_SPI_MOSI;
 
-assign debug = '0;
 assign start = '1;
+assign chip_debug = '1;
+assign fpga_debug = '0;
 
 sp_rd sp_rd_inst(.*);
 

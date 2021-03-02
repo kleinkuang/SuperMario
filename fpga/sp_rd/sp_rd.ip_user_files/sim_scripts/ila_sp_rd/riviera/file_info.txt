@@ -1,0 +1,2 @@
+ila_sp_rd.v,verilog,xil_defaultlib,../../../../sp_rd.srcs/sources_1/ip/ila_sp_rd/sim/ila_sp_rd.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

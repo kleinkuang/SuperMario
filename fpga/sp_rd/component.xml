@@ -207,7 +207,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>4df935bc</spirit:value>
+            <spirit:value>219501b6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -226,7 +226,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>4df935bc</spirit:value>
+            <spirit:value>0246a84f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -262,6 +262,20 @@
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_testbench</spirit:name>
+        <spirit:displayName>Test Bench</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation.testbench</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_testbench_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>382cc857</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
     </spirit:views>
     <spirit:ports>
       <spirit:port>
@@ -291,7 +305,20 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>debug</spirit:name>
+        <spirit:name>chip_debug</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>fpga_debug</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -620,6 +647,10 @@
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>src/sp_rd.xdc</spirit:name>
+        <spirit:userFileType>xdc</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>sp_rd.srcs/sources_1/ip/ila_sp_rd/ila_sp_rd.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
@@ -634,7 +665,7 @@
       <spirit:file>
         <spirit:name>src/sp_rd_lvds.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_1279fb8e</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_47987c6d</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -707,6 +738,44 @@
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_testbench_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../chip/src/ADC_Counter.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../chip/src/CentralController.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../chip/src/Top_Digital.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../chip/src/supermario.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sp_rd_tb.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
   </spirit:fileSets>
   <spirit:description>sp_rd_lvds_v1_0</spirit:description>
   <spirit:parameters>
@@ -725,8 +794,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>sp_rd_lvds_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>6</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2021-02-23T19:26:15Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>9</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2021-03-02T12:05:48Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@57051275_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@304b9954_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
@@ -802,13 +871,49 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@33ef3d04_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@58ee0cd8_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@376578f8_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1729e8ee_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74343a23_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e5c1277_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bb5006d_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a821875_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9a28d20_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f7c1921_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b28c9c9_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@476af1a0_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74c11dd6_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@663cfb45_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@370aed36_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3709ad10_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45971867_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31b4d7c9_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10a483e6_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38fdfaa4_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67fa2171_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ef80675_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75e6cc08_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f010518_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cb579c2_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6595fba1_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@160371bb_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41006753_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f936c3d_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2439a34c_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5864f040_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13d0a0d8_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71f0716a_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ae0a5be_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c0cb666_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bf8c1b3_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6eaff55f_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cdb90a2_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32960a16_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="bc3de628"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="e0ff131b"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="a9eb2dc6"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="facf5ae2"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="132d1598"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="77e91cd6"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

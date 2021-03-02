@@ -1,0 +1,6 @@
+12:27:39 **** Incremental Build of configuration Debug for project sp_mcu ****
+make all 
+make: Nothing to be done for 'all'.
+
+12:27:39 Build Finished (took 92ms)
+

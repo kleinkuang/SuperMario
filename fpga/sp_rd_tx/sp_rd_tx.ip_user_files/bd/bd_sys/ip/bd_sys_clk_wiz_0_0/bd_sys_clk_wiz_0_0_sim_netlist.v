@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Tue Feb 23 14:12:54 2021
+// Date        : Fri Feb 26 20:54:36 2021
 // Host        : DESKTOP-N45SUQF running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               f:/SuperMario/fpga/sp_rd_tx/sp_rd_tx.srcs/sources_1/bd/bd_sys/ip/bd_sys_clk_wiz_0_0/bd_sys_clk_wiz_0_0_sim_netlist.v
+//               F:/SuperMario/fpga/sp_rd_tx/sp_rd_tx.srcs/sources_1/bd/bd_sys/ip/bd_sys_clk_wiz_0_0/bd_sys_clk_wiz_0_0_sim_netlist.v
 // Design      : bd_sys_clk_wiz_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.

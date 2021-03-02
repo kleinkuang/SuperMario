@@ -6,8 +6,6 @@
 
 module ft_tx_debug
 (
-    input logic         CLK_IN1_clk_p,
-    input logic         CLK_IN1_clk_n,
     input logic         sys_rst,
     
     output logic [3:0]  FT601Q_ft_be,
@@ -48,9 +46,6 @@ assign wr_en   = ft_ready & ~wr_full;
 
 bd_sys bd_sys_inst
 (
-    .CLK_IN1_clk_p      (CLK_IN1_clk_p),
-    .CLK_IN1_clk_n      (CLK_IN1_clk_n),
-
     .nrst               (nrst),
     
     .ft_ready           (ft_ready),

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jan 31 09:42:56 2019
+# Process ID: 5888
+# Current directory: C:/vcu118_scui/scui_v2.30
+# Command line: vivado.exe -mode batch -source verify_sysctrl.tcl
+# Log file: C:/vcu118_scui/scui_v2.30/vivado.log
+# Journal file: C:/vcu118_scui/scui_v2.30\vivado.jou
+#-----------------------------------------------------------
+source verify_sysctrl.tcl

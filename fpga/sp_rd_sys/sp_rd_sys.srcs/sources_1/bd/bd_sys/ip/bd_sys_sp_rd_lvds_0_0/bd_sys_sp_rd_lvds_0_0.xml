@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>bd_sys_sp_rd_lvds_0_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>SP</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="user" spirit:name="SuperMario" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="user" spirit:name="SuperMario_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>SP_SPI_MOSI_N</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>SP_SPI_MOSI_N</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>SP_CLK_N</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>SP_CLK_N</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>SP_NRST_P</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>SP_NRST_P</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>SP_NRST_N</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>SP_NRST_N</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>SP_DIN_P</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>SP_DIN_P</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>SP_DIN_N</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>SP_DIN_N</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>SP_DOUT_P</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>SP_DOUT_P</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>SP_DOUT_N</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>SP_DOUT_N</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>SP_UPDATE_P</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>SP_UPDATE_P</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>SP_UPDATE_N</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>SP_UPDATE_N</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>SP_EOF_P</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>SP_EOF_P</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>SP_EOF_N</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>SP_EOF_N</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>SP_SPI_CS_P</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>SP_SPI_CS_P</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>SP_SPI_CS_N</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>SP_SPI_CS_N</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>SP_SPI_MISO_P</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>SP_SPI_MISO_P</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>SP_SPI_MISO_N</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>SP_SPI_MISO_N</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>SP_SPI_MOSI_P</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>SP_SPI_MOSI_P</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>SP_CLK_P</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>SP_CLK_P</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>DATA_OUT</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="user" spirit:name="FIFO_WR" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="user" spirit:name="FIFO_WR_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>wr_data</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>dout</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>wr_clk</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>dout_clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>wr_en</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>dout_valid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>nrst</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>chip_debug</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>fpga_debug</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>start</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dout_clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dout</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dout_valid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SP_CLK_P</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SP_CLK_N</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SP_NRST_P</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SP_NRST_N</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SP_DIN_P</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SP_DIN_N</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SP_DOUT_P</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SP_DOUT_N</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SP_UPDATE_P</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SP_UPDATE_N</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SP_EOF_P</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SP_EOF_N</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SP_SPI_CS_P</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SP_SPI_CS_N</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SP_SPI_MISO_P</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SP_SPI_MISO_N</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SP_SPI_MOSI_P</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>SP_SPI_MOSI_N</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>logic</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:description>sp_rd_lvds_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">bd_sys_sp_rd_lvds_0_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>sp_rd_lvds_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>9</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57051275_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@304b9954_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dc3840_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fad43ea_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f418796_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57e11139_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54166770_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3aa63d1a_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@df8c429_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35e2189_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3589501c_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64d6bf_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@591110e4_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17fab78e_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@96aed9d_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73f06a0a_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@333adbd4_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ae4fea3_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62810e54_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e209dd4_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50fc9f02_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57e40c6f_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64454dc1_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68a347b_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cacded0_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d9c819f_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bbdeba7_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b2bb0c8_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4de9217b_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e79d322_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48c36f11_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a1fe33f_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55bd1fcc_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26f013e2_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dbc9203_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5de59a11_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a65529b_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25b96d68_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7040ac58_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d8dcd94_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35b136a6_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e48ffa4_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7386d0f8_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33e27ea7_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b44f236_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a34d170_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22f4ffac_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@311562b3_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a8fcb21_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30ae6355_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44c1d6a9_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e582664_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3abaf79f_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f1dceb1_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b7fb7fa_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2349f349_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7125db8e_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58362feb_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d7de6fa_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53ea521e_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8d301d2_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ea62a21_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e25263c_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7231f0e6_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1057d6c6_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64639b38_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a768000_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@594b3d1b_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a47c5b2_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76bc716a_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@500aa9b_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33ef3d04_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58ee0cd8_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@376578f8_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1729e8ee_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74343a23_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e5c1277_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bb5006d_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a821875_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9a28d20_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f7c1921_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b28c9c9_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@476af1a0_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74c11dd6_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@663cfb45_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@370aed36_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3709ad10_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45971867_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31b4d7c9_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10a483e6_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38fdfaa4_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67fa2171_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ef80675_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75e6cc08_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f010518_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cb579c2_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6595fba1_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@160371bb_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41006753_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f936c3d_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2439a34c_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5864f040_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13d0a0d8_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71f0716a_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ae0a5be_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c0cb666_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bf8c1b3_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6eaff55f_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cdb90a2_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32960a16_ARCHIVE_LOCATION">f:/SuperMario/fpga/sp_rd</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="bc3de628"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="facf5ae2"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="132d1598"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="77e91cd6"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

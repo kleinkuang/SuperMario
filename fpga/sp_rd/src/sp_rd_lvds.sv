@@ -10,7 +10,8 @@ module sp_rd_lvds
     input  logic        clk,
     input  logic        nrst,
     
-    input  logic        debug,
+    input  logic        chip_debug,
+    input  logic        fpga_debug,
     input  logic        start,
     
     output logic        dout_clk,
@@ -59,7 +60,8 @@ sp_rd sp_rd_inst
     .clk         (clk),
     .nrst        (nrst),
     
-    .debug       (debug),
+    .chip_debug  (chip_debug),
+    .fpga_debug  (fpga_debug),
     .start       (start),
     
     .dout        (dout),

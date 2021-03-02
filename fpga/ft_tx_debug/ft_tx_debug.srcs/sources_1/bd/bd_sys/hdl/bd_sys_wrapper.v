@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Tue Feb 23 11:40:28 2021
+//Date        : Mon Mar  1 17:56:40 2021
 //Host        : DESKTOP-N45SUQF running 64-bit major release  (build 9200)
 //Command     : generate_target bd_sys_wrapper.bd
 //Design      : bd_sys_wrapper
@@ -10,9 +10,7 @@
 `timescale 1 ps / 1 ps
 
 module bd_sys_wrapper
-   (CLK_IN1_clk_n,
-    CLK_IN1_clk_p,
-    FT601Q_ft_be,
+   (FT601Q_ft_be,
     FT601Q_ft_clk,
     FT601Q_ft_data,
     FT601Q_ft_nrst,
@@ -29,8 +27,6 @@ module bd_sys_wrapper
     wr_data,
     wr_en,
     wr_full);
-  input CLK_IN1_clk_n;
-  input CLK_IN1_clk_p;
   output [3:0]FT601Q_ft_be;
   input FT601Q_ft_clk;
   output [31:0]FT601Q_ft_data;
@@ -49,8 +45,6 @@ module bd_sys_wrapper
   input wr_en;
   output wr_full;
 
-  wire CLK_IN1_clk_n;
-  wire CLK_IN1_clk_p;
   wire [3:0]FT601Q_ft_be;
   wire FT601Q_ft_clk;
   wire [31:0]FT601Q_ft_data;
@@ -70,9 +64,7 @@ module bd_sys_wrapper
   wire wr_full;
 
   bd_sys bd_sys_i
-       (.CLK_IN1_clk_n(CLK_IN1_clk_n),
-        .CLK_IN1_clk_p(CLK_IN1_clk_p),
-        .FT601Q_ft_be(FT601Q_ft_be),
+       (.FT601Q_ft_be(FT601Q_ft_be),
         .FT601Q_ft_clk(FT601Q_ft_clk),
         .FT601Q_ft_data(FT601Q_ft_data),
         .FT601Q_ft_nrst(FT601Q_ft_nrst),

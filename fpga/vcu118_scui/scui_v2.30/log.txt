@@ -1,0 +1,45 @@
+Pressed: 	'VADJ_1V8'
+COM21 - Silicon Labs Dual CP2105 USB to UART Bridge: Enhanced COM Port (COM21)
+[('<setmux:0:75:10>', '', '', ''), ('<getINA226:0:42:12>', '', '', ''), ('<interpINA226:0>', '', '', ''), ('<setmux:0:75:ff>', '', '', '')]
+Writing:	'IW0\r75\r10\r\t'
+Writing:	'IW0\r42\r00\r\tIR0\r42\r2\r\tIW0\r42\r01\r\tIR0\r42\r2\r\tIW0\r42\r02\r\tIR0\r42\r2\r\tIW0\r42\r03\r\tIR0\r42\r2\r\tIW0\r42\r04\r\tIR0\r42\r2\r\tIW0\r42\r05\r\tIR0\r42\r2\r\tIW0\r42\r06\r\tIR0\r42\r2\r\tIW0\r42\r07\r\tIR0\r42\r2\r\tIW0\r42\rFE\r\tIR0\r42\r2\r\tIW0\r42\rFF\r\tIR0\r42\r2\r\tMRS\r12\r\t'
+Writing:	'IW0\r75\rff\r\t'
+Success:	'IW0\r75\r10\r\tIW0\r42\r00\r\tIR0\r42\r2\r\tIW0\r42\r01\r\tIR0\r42\r2\r\tIW0\r42\r02\r\tIR0\r42\r2\r\tIW0\r42\r03\r\tIR0\r42\r2\r\tIW0\r42\r04\r\tIR0\r42\r2\r\tIW0\r42\r05\r\tIR0\r42\r2\r\tIW0\r42\r06\r\tIR0\r42\r2\r\tIW0\r42\r07\r\tIR0\r42\r2\r\tIW0\r42\rFE\r\tIR0\r42\r2\r\tIW0\r42\rFF\r\tIR0\r42\r2\r\tMRS\r12\r\tIW0\r75\rff\r\t'
+Output: 	'IW0\r75\r10\r:P\r~~~\r:P\rIW0\r42\r00\r:P\rIR0\r42\r2\r:P\r4127\rIW0\r42\r01\r:P\rIR0\r42\r2\r:P\rFFFC\rIW0\r42\r02\r:P\rIR0\r42\r2\r:P\r06CB\rIW0\r42\r03\r:P\rIR0\r42\r2\r:P\r0000\rIW0\r42\r04\r:P\rIR0\r42\r2\r:P\rFFF8\rIW0\r42\r05\r:P\rIR0\r42\r2\r:P\r0D1B\rIW0\r42\r06\r:P\rIR0\r42\r2\r:P\r0008\rIW0\r42\r07\r:P\rIR0\r42\r2\r:P\r0000\rIW0\r42\rFE\r:P\rIR0\r42\r2\r:P\r5449\rIW0\r42\rFF\r:P\rIR0\r42\r2\r:P\r2260\rMRS\r12\r:P\r3F3400AD25DACFAE\r~~~\r:P\r[power:0.0 Watts volts:2.17 Volts amps:0.0 Amps ][REGISTERS:2260,5449,0000,0008,0D1B,FFF8,0000,06CB,FFFC,4127]~~~\r:P\rIW0\r75\rff\r:P\r~~~\r:P\r~~~\r:P\r'
+
+Pressed: 	'VADJ_1V8'
+COM21 - Silicon Labs Dual CP2105 USB to UART Bridge: Enhanced COM Port (COM21)
+[('<setmux:0:75:10>', '', '', ''), ('<getINA226:0:42:12>', '', '', ''), ('<interpINA226:0>', '', '', ''), ('<setmux:0:75:ff>', '', '', '')]
+Writing:	'IW0\r75\r10\r\t'
+Writing:	'IW0\r42\r00\r\tIR0\r42\r2\r\tIW0\r42\r01\r\tIR0\r42\r2\r\tIW0\r42\r02\r\tIR0\r42\r2\r\tIW0\r42\r03\r\tIR0\r42\r2\r\tIW0\r42\r04\r\tIR0\r42\r2\r\tIW0\r42\r05\r\tIR0\r42\r2\r\tIW0\r42\r06\r\tIR0\r42\r2\r\tIW0\r42\r07\r\tIR0\r42\r2\r\tIW0\r42\rFE\r\tIR0\r42\r2\r\tIW0\r42\rFF\r\tIR0\r42\r2\r\tMRS\r12\r\t'
+Writing:	'IW0\r75\rff\r\t'
+Success:	'IW0\r75\r10\r\tIW0\r42\r00\r\tIR0\r42\r2\r\tIW0\r42\r01\r\tIR0\r42\r2\r\tIW0\r42\r02\r\tIR0\r42\r2\r\tIW0\r42\r03\r\tIR0\r42\r2\r\tIW0\r42\r04\r\tIR0\r42\r2\r\tIW0\r42\r05\r\tIR0\r42\r2\r\tIW0\r42\r06\r\tIR0\r42\r2\r\tIW0\r42\r07\r\tIR0\r42\r2\r\tIW0\r42\rFE\r\tIR0\r42\r2\r\tIW0\r42\rFF\r\tIR0\r42\r2\r\tMRS\r12\r\tIW0\r75\rff\r\t'
+Output: 	'IW0\r75\r10\r:P\r~~~\r:P\rIW0\r42\r00\r:P\rIR0\r42\r2\r:P\r4127\rIW0\r42\r01\r:P\rIR0\r42\r2\r:P\rFFFB\rIW0\r42\r02\r:P\rIR0\r42\r2\r:P\r06CB\rIW0\r42\r03\r:P\rIR0\r42\r2\r:P\r0000\rIW0\r42\r04\r:P\rIR0\r42\r2\r:P\rFFF9\rIW0\r42\r05\r:P\rIR0\r42\r2\r:P\r0D1B\rIW0\r42\r06\r:P\rIR0\r42\r2\r:P\r0008\rIW0\r42\r07\r:P\rIR0\r42\r2\r:P\r0000\rIW0\r42\rFE\r:P\rIR0\r42\r2\r:P\r5449\rIW0\r42\rFF\r:P\rIR0\r42\r2\r:P\r2260\rMRS\r12\r:P\r3F3400AD25DACFAE\r~~~\r:P\r[power:0.0 Watts volts:2.17 Volts amps:0.0 Amps ][REGISTERS:2260,5449,0000,0008,0D1B,FFF9,0000,06CB,FFFB,4127]~~~\r:P\rIW0\r75\rff\r:P\r~~~\r:P\r~~~\r:P\r'
+
+Pressed: 	'VADJ_1V8'
+COM21 - Silicon Labs Dual CP2105 USB to UART Bridge: Enhanced COM Port (COM21)
+[('<setmux:0:75:10>', '', '', ''), ('<getINA226:0:42:12>', '', '', ''), ('<interpINA226:0>', '', '', ''), ('<setmux:0:75:ff>', '', '', '')]
+Writing:	'IW0\r75\r10\r\t'
+Writing:	'IW0\r42\r00\r\tIR0\r42\r2\r\tIW0\r42\r01\r\tIR0\r42\r2\r\tIW0\r42\r02\r\tIR0\r42\r2\r\tIW0\r42\r03\r\tIR0\r42\r2\r\tIW0\r42\r04\r\tIR0\r42\r2\r\tIW0\r42\r05\r\tIR0\r42\r2\r\tIW0\r42\r06\r\tIR0\r42\r2\r\tIW0\r42\r07\r\tIR0\r42\r2\r\tIW0\r42\rFE\r\tIR0\r42\r2\r\tIW0\r42\rFF\r\tIR0\r42\r2\r\tMRS\r12\r\t'
+Writing:	'IW0\r75\rff\r\t'
+Success:	'IW0\r75\r10\r\tIW0\r42\r00\r\tIR0\r42\r2\r\tIW0\r42\r01\r\tIR0\r42\r2\r\tIW0\r42\r02\r\tIR0\r42\r2\r\tIW0\r42\r03\r\tIR0\r42\r2\r\tIW0\r42\r04\r\tIR0\r42\r2\r\tIW0\r42\r05\r\tIR0\r42\r2\r\tIW0\r42\r06\r\tIR0\r42\r2\r\tIW0\r42\r07\r\tIR0\r42\r2\r\tIW0\r42\rFE\r\tIR0\r42\r2\r\tIW0\r42\rFF\r\tIR0\r42\r2\r\tMRS\r12\r\tIW0\r75\rff\r\t'
+Output: 	'IW0\r75\r10\r:P\r~~~\r:P\rIW0\r42\r00\r:P\rIR0\r42\r2\r:P\r4127\rIW0\r42\r01\r:P\rIR0\r42\r2\r:P\rFFFF\rIW0\r42\r02\r:P\rIR0\r42\r2\r:P\r0210\rIW0\r42\r03\r:P\rIR0\r42\r2\r:P\r0000\rIW0\r42\r04\r:P\rIR0\r42\r2\r:P\r0000\rIW0\r42\r05\r:P\rIR0\r42\r2\r:P\r0D1B\rIW0\r42\r06\r:P\rIR0\r42\r2\r:P\r0008\rIW0\r42\r07\r:P\rIR0\r42\r2\r:P\r0000\rIW0\r42\rFE\r:P\rIR0\r42\r2\r:P\r5449\rIW0\r42\rFF\r:P\rIR0\r42\r2\r:P\r2260\rMRS\r12\r:P\r3F3400AD25DACFAE\r~~~\r:P\r[power:0.0 Watts volts:0.66 Volts amps:0.0 Amps ][REGISTERS:2260,5449,0000,0008,0D1B,0000,0000,0210,FFFF,4127]~~~\r:P\rIW0\r75\rff\r:P\r~~~\r:P\r~~~\r:P\r'
+
+Pressed: 	'Set VADJ to 1.8 V'
+COM21 - Silicon Labs Dual CP2105 USB to UART Bridge: Enhanced COM Port (COM21)
+[('<setmux:0:75:01>', '', '', ''), ('<setMAX15303voltage:0:12:1.8>', '', '', ''), ('<setmux:0:75:00>', '', '', '')]
+Writing:	'IW0\r75\r01\r\t'
+Writing:	'IW0\r12\r0140\r\tDLY\rC350\r\tIW0\r12\r21cd1c\r\tDLY\rC350\r\tIW0\r12\r0180\r\tDLY\rC350\r\t'
+Writing:	'IW0\r75\r00\r\t'
+Success:	'IW0\r75\r01\r\tIW0\r12\r0140\r\tDLY\rC350\r\tIW0\r12\r21cd1c\r\tDLY\rC350\r\tIW0\r12\r0180\r\tDLY\rC350\r\tIW0\r75\r00\r\t'
+Output: 	'IW0\r75\r01\r:P\r~~~\r:P\rIW0\r12\r0140\r:P\rDLY\rC350\r:P\rIW0\r12\r21cd1c\r:P\rDLY\rC350\r:P\rIW0\r12\r0180\r:P\rDLY\rC350\r:P\r~~~\r:P\rIW0\r75\r00\r:P\r~~~\r:P\r~~~\r:P\r'
+
+Pressed: 	'VADJ_1V8'
+COM21 - Silicon Labs Dual CP2105 USB to UART Bridge: Enhanced COM Port (COM21)
+[('<setmux:0:75:10>', '', '', ''), ('<getINA226:0:42:12>', '', '', ''), ('<interpINA226:0>', '', '', ''), ('<setmux:0:75:ff>', '', '', '')]
+Writing:	'IW0\r75\r10\r\t'
+Writing:	'IW0\r42\r00\r\tIR0\r42\r2\r\tIW0\r42\r01\r\tIR0\r42\r2\r\tIW0\r42\r02\r\tIR0\r42\r2\r\tIW0\r42\r03\r\tIR0\r42\r2\r\tIW0\r42\r04\r\tIR0\r42\r2\r\tIW0\r42\r05\r\tIR0\r42\r2\r\tIW0\r42\r06\r\tIR0\r42\r2\r\tIW0\r42\r07\r\tIR0\r42\r2\r\tIW0\r42\rFE\r\tIR0\r42\r2\r\tIW0\r42\rFF\r\tIR0\r42\r2\r\tMRS\r12\r\t'
+Writing:	'IW0\r75\rff\r\t'
+Success:	'IW0\r75\r10\r\tIW0\r42\r00\r\tIR0\r42\r2\r\tIW0\r42\r01\r\tIR0\r42\r2\r\tIW0\r42\r02\r\tIR0\r42\r2\r\tIW0\r42\r03\r\tIR0\r42\r2\r\tIW0\r42\r04\r\tIR0\r42\r2\r\tIW0\r42\r05\r\tIR0\r42\r2\r\tIW0\r42\r06\r\tIR0\r42\r2\r\tIW0\r42\r07\r\tIR0\r42\r2\r\tIW0\r42\rFE\r\tIR0\r42\r2\r\tIW0\r42\rFF\r\tIR0\r42\r2\r\tMRS\r12\r\tIW0\r75\rff\r\t'
+Output: 	'IW0\r75\r10\r:P\r~~~\r:P\rIW0\r42\r00\r:P\rIR0\r42\r2\r:P\r4127\rIW0\r42\r01\r:P\rIR0\r42\r2\r:P\r009D\rIW0\r42\r02\r:P\rIR0\r42\r2\r:P\r059E\rIW0\r42\r03\r:P\rIR0\r42\r2\r:P\r0012\rIW0\r42\r04\r:P\rIR0\r42\r2\r:P\r0106\rIW0\r42\r05\r:P\rIR0\r42\r2\r:P\r0D1B\rIW0\r42\r06\r:P\rIR0\r42\r2\r:P\r0008\rIW0\r42\r07\r:P\rIR0\r42\r2\r:P\r0000\rIW0\r42\rFE\r:P\rIR0\r42\r2\r:P\r5449\rIW0\r42\rFF\r:P\rIR0\r42\r2\r:P\r2260\rMRS\r12\r:P\r3F3400AD25DACFAE\r~~~\r:P\r[power:0.14 Watts volts:1.8 Volts amps:0.08 Amps ][REGISTERS:2260,5449,0000,0008,0D1B,0106,0012,059E,009D,4127]~~~\r:P\rIW0\r75\rff\r:P\r~~~\r:P\r~~~\r:P\r'
+

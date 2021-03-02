@@ -22,7 +22,7 @@ print()
 data = (c_ubyte * data_size)()
 size = data_size
 
-for n in range(0, 128*10000 + 1):
+for n in range(0, 1000000 + 1):
     data = ft601.readPipeEx(0x82, size, raw=True)
     data_num = data['bytesTransferred']
     if(data_num!=0):
@@ -31,22 +31,27 @@ for n in range(0, 128*10000 + 1):
         data_beg = data[0]
         data_end = data[-1]
         
-        print("Receive Bytes: %8d, %4d %4d" % (data_num, data_beg, data_end))
+        if(data_beg==0 and data_end==255):
+            print("Receive Bytes: %8d, %4d %4d" % (data_num, data_beg, data_end))
+            pass
+        else:
+            print("Receive Bytes: %8d, %4d %4d" % (data_num, data_beg, data_end))
+            raise SystemError
     else:
         break
         
-if(data_num==0):
-    print("No data received !")
-else:
-    print()
-    print("Receive Bytes: %d" % data_num)
-    i=0
-    for num in data:
-        print('%4d' % num, end='')
-        i = i + 1
-        if(i==32):
-            i = 0
-            print()
+#if(data_num==0):
+#    print("No data received !")
+#else:
+#    print()
+#    print("Receive Bytes: %d" % data_num)
+#    i=0
+#    for num in data:
+#        print('%4d' % num, end='')
+#        i = i + 1
+#        if(i==32):
+#            i = 0
+#            print()
 
 # close current device
 ft601.close()

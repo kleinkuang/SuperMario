@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-5.1.dtd">
 <!-- eric project file for project SuperMario -->
-<!-- Saved: 2021-02-22, 23:58:26 -->
+<!-- Saved: 2021-03-01, 23:18:43 -->
 <!-- Copyright (C) 2021 ,  -->
 <Project version="5.1">
   <Language>en_US</Language>
@@ -15,9 +15,11 @@
   <Sources>
     <Source>SuperMario.py</Source>
     <Source>SuperMario_Cmd.py</Source>
+    <Source>SuperMario_Func.py</Source>
     <Source>SuperMario_Plot.py</Source>
+    <Source>SuperMario_Thread.py</Source>
     <Source>Ui_SuperMario.py</Source>
-    <Source>__init__.py</Source>
+    <Source>ex_real_time_data_acquisition.py</Source>
   </Sources>
   <Forms>
     <Form>SuperMario.ui</Form>
